@@ -12,8 +12,8 @@
 
 - name: convert present_groups_on_repo_dict to list
   set_fact:
-    present_groups_on_repo_list: "{{ linux_groups | ansible-simplest-filters.custom_filters.subkey_dict_seek('enabled',True,'') }}"
-    absent_groups_on_repo_list: "{{ linux_groups | ansible-simplest-filters.custom_filters.subkey_dict_seek('enabled',False,'') }}"
+    present_groups_on_repo_list: "{{ linux_groups | js.simplest_filters.subkey_dict_seek('enabled',True,'') }}"
+    absent_groups_on_repo_list: "{{ linux_groups | js.simplest_filters.subkey_dict_seek('enabled',False,'') }}"
   tags:
     - debug
     - show
