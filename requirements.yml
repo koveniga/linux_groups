@@ -1,0 +1,5 @@
+collections:
+  - name: js
+    source: git+https://github.com/koveniga/ansible-simplest-collection.git
+    type: git
+    version: v2

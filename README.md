@@ -1,3 +1,9 @@
+Before use role:
+
+```
+ansible-galaxy install -r requirements.yml
+```
+
 Описание:
 --------------
 
